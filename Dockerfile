@@ -19,9 +19,6 @@ ADD requirements.txt $SRC/requirements.txt
 RUN cd $SRC; pip install -r requirements.txt
 
 EXPOSE 5000
-# EXPOSE PORT
-
-VOLUME ["/tmp/"]
 
 WORKDIR $SRC/$NAME/src/
 

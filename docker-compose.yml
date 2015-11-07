@@ -16,11 +16,8 @@ worker:
   image: nlarusso/test-api
   ports:
     - "5000"
-#  env_file: server/credentials.env
   environment:
     - VIRTUAL_HOST=localhost
     - VIRTUAL_PORT=5000
-#  external_links:
-#    - local-postgres9.3.6:postgresql
   volumes:
     - /opt/devops/test-api/:/opt/data_services/test-api
