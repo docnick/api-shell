@@ -1,6 +1,6 @@
-#sudo docker build -t nlarusso/test-api .
+#sudo docker build -t test-api .
 
-#docker run --name test -p 5000:5000 -v /opt/devops/test-api/:/opt/data_services/test-api -d nlarusso/test-api
+#docker run --name test -p 5000:5000 -v /opt/devops/test-api/:/opt/data_services/test-api -d test-api
 
 FROM ubuntu:14.04
 MAINTAINER nlarusso

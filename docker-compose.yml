@@ -13,7 +13,7 @@ balancer:
     - /var/run/docker.sock:/tmp/docker.sock
 
 worker:
-  image: nlarusso/test-api
+  image: test-api
   ports:
     - "5000"
   environment:
