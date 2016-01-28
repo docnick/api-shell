@@ -21,7 +21,7 @@ ln -s api-shell /opt/devops/test-api/
 sudo docker build -t test-api .
 ```
 
-3) **Start the service**: Run `docker-compose up`, this should start 2 containers: the nginx load balancer and the app container. You can test that everything is working correctly by testing the API.
+3) **Start the service**: Run `docker-compose up` (or `docker-compose up -d` if you'd like to run the container in the background), this should start 2 containers: the nginx load balancer and the app container. You can test that everything is working correctly by testing the API.
 ```
 curl -XGET http://127.0.0.1:5000/test
 ```
