@@ -4,11 +4,17 @@ Shell of a flask API with dockerized nginx load balancer
 # Getting Started
 A (hopefully) simple explanation of how to get up and running.
 
+0) **Install Docker**: [Install Docker](https://docs.docker.com/engine/installation/) and [Docker compose](https://docs.docker.com/compose/install/) on your machine.
+
 1) **Link your source**: Docker expects the API source code to exist on your host at:
 ```
 /opt/devops/test-api/
 ```
-The easiest thing to do is create a symlink to map your files to that location.
+The easiest thing to do is, after you clone this repo, create a symlink to map your files to that location. E.g.
+```
+mkdir -p /opt/devops/test-api/
+ln -s api-shell /opt/devops/test-api/
+```
 
 2) **Build the Docker image for the API**: The docker file exists in the top level of the repo, so just navagate there and type:
 ```
